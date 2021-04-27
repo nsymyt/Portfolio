@@ -52,11 +52,10 @@
   
     p{
       font-size: 15px;
-    }
-    .about h3 {
       margin: 0;
     }
-    .left-box h2,h3 {
+    
+    h2,h3 {
       margin: 0;
     }
     
@@ -73,7 +72,7 @@
     }
     .work2{
       width: 100%;
-      background-color:#f1f1f1;
+      background-color:#FDF5E6;
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -83,7 +82,38 @@
       width: 300px;
     }
     .about{
-      background-color: lightseagreen;
+      background-color: #B1F9D0	;
+    }
+
+    form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    }
+    .message{
+      background-color:#f1f1f1;
+    }
+    .message-form{
+      width: 40%;
+      padding: 10px;
+    }
+    input, textarea{
+      width: 90%;
+      margin: 5px 0px 0px 0px;
+    }
+    textarea{
+      height: 150px;
+    }
+    [type = submit]{
+      width: 80px;
+    }
+  
+    .footer{
+      background-color:#f1f1f1;
+      color:#777777;
+      padding: 10px;
+      text-align: center;
     }
   </style>
 
@@ -145,8 +175,20 @@
       <p>生年月日：1998年4月24日</p>
       <p>出身校：北九州市立大学経済学部経営情報学科</p>
     </div>
+    <div class="message"> 
+      <div class="message-form">
+        <form action=""> 
+          <input type="text" name="name" placeholder="NAME">
+          <input type="email" name="email" placeholder="EMAIL">
+          <textarea name="message" placeholder="MESSAGE"></textarea>
+          <input type="submit" value="SUBMIT">
+        </form>
+      </div>
+    </div>
   </div>
-
+  <div class="footer">
+    <p class="copyright">Copyright &copy; 2021 YUTO NISHIYAMA All Right Reserved.</p>
+  </div>
   <script>
     'use strict'
   </script>
