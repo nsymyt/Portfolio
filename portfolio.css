@@ -2,7 +2,7 @@ body{
   padding: 0;
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  overflow-x:hidden ;
+  overflow-x: hidden;
 }
 
 #main{
@@ -10,9 +10,8 @@ body{
   height: 100%;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0px;
   z-index: 1;
-  overflow: auto;
   box-sizing: border-box;
 }
 #menu{
@@ -20,17 +19,21 @@ body{
   position: absolute;
   top: 0;
   left: -180px;
-  color:#aaaaaa;
   width: 180px;
   height: 450px;
   z-index: 2;
   box-sizing: border-box;
+  transition: .4s;
 }
 ul{
   list-style: none;
 }
 li{
   margin: 5px;
+}
+a{
+  text-decoration: none;
+  color: #aaaaaa;
 }
 #open, #close{
   float: left;
@@ -40,6 +43,14 @@ li{
 
 #menu.menu-open{
   left: 0px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+nav{
+  scroll-behavior: smooth;
 }
 
 .title{
@@ -62,36 +73,40 @@ li{
 }
 p{
   font-size: 15px;
-  margin: 0;
 }
 h1,h2,h3 {
   margin: 0;
 }
-
 .work1{
-  width: 100%;
+  width: 1500px;
   background-color:#87CEEB	;
   color: #fff;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+	overflow: auto;
 }
 .left-box{
-  width: 300px;
+  min-width: 500px;
+  padding: 0 0 10px 10px;
+}
+.right-box{
+  white-space: nowrap;
 }
 .work2{
-  width: 100%;
+  width: 1500px;
   background-color:#FDF5E6;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  overflow: auto;
 }
 img{
-  height: 300px;
-  width: 300px;
+  height: 380px;
+  width: 380px;
+  padding:50px 20px 50px 20px ; 
 }
 .about{
   background-color: #B1F9D0	;
+  height: 450px;
 }
 
 form {
