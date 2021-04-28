@@ -5,17 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
   <title>YutoNishiyamaPortfolio</title>
 </head>
 <body>
   <div id="menu">
+    <i class="fa fa-times" id="close"></i>
     <ul>
       <li>WORK</li>
       <li>ABOUT</li>
       <li>MESSAGE</li>
     </ul>
   </div>
-  <div class="main">
+  <div id="main">
+    <i class="fa fa-bars" id="open"></i>
     <div class="title">
       <h1 class="main-title">
         YUTO NISHIYAMA
@@ -75,13 +78,25 @@
         </form>
       </div>
     </div>
-  </div>
-  <div class="footer">
-    <p class="copyright">Copyright &copy; 2021 YUTO NISHIYAMA All Right Reserved.</p>
+    <div class="footer">
+      <p class="copyright">Copyright &copy; 2021 YUTO NISHIYAMA All Right Reserved.</p>
+    </div>
   </div>
   <script>
     'use strict'
-  </script>
 
+    const open = document.getElementById('open');
+    const close = document.getElementById('close')
+    const menu = document.getElementById('menu');
+
+    open.addEventListener('click',() =>{
+      menu.className = 'menu-open';
+    });
+
+    close.addEventListener('click',() =>{
+      menu.className = '';
+    });
+
+  </script>
 </body>
 </html>
