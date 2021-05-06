@@ -1,0 +1,151 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-x: hidden;
+}
+
+#main{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  z-index: 1;
+  box-sizing: border-box;
+}
+#menu{
+  background-color:Transparent;
+  position: absolute;
+  top: 0;
+  left: -180px;
+  width: 180px;
+  height: auto;
+  z-index: 2;
+  box-sizing: border-box;
+  transition: .4s;
+}
+ul{
+  list-style: none;
+}
+li{
+  margin: 5px;
+}
+a{
+  text-decoration: none;
+  color: #aaaaaa;
+}
+#open, #close{
+  float: left;
+  cursor: pointer;
+  color:#aaaaaa;
+  font-size: 20px;
+}
+
+#menu.menu-open{
+  left: 0px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+nav{
+  scroll-behavior: smooth;
+}
+
+.title{
+  top: 0;
+  background-image:url(image/title.jpg);
+  background-size: cover;
+  width: 100%;
+}
+
+.main-title{
+  color: #231815;
+  text-align: center;
+  line-height: 25px;
+  padding:350px 0px 350px 0px ; 
+  font-weight: normal;
+  font-size: 35px;
+}
+.sub-title{
+  color:#aaaaaa;
+  display: block;
+  font-size:20px;
+}
+p{
+  font-size: 15px;
+}
+h1,h2,h3 {
+  margin: 0;
+}
+.work1{
+  width: 1500px;
+  background-color:#f8f8ff;
+  display: flex;
+  align-items: center;
+	overflow: auto;
+}
+.left-box{
+  min-width: 500px;
+  padding: 0px 0px 10px 10px;
+}
+.right-box{
+  white-space: nowrap;
+}
+.work2{
+  width: 1500px;
+  background-color :#fffafa;
+  display: flex;
+  align-items: center;
+  overflow: auto;
+}
+img{
+  height: 380px;
+  width: 380px;
+  padding:50px 20px 50px 20px ; 
+}
+.about{
+  background-color:#f0ffff;
+}
+.profile{
+  padding: 70px 0px 70px 10px;
+}
+
+.message{
+  background-color: #f5f5f5;
+}
+.message-box{
+  padding:50px 0px 50px 10px ;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  }
+.message-form{
+  width: 40%;
+  padding: 10px;
+}
+input, textarea{
+  width: 90%;
+  margin: 5px 0px 0px 0px;
+}
+textarea{
+  height: 150px;
+}
+[type = submit]{
+  width: 80px;
+}
+
+.footer{
+  background-color:  #f5f5f5;
+  color:#777777;
+  padding: 10px;
+  text-align: center;
+}
+.footer p{
+  font-size: 10px;
+}
